@@ -1,7 +1,13 @@
+
+
 #img-bg{
     background-image: url('https://i.imgur.com/pqQLQy8.jpg');
     min-height: 695px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container-fluid{
+ background-color: #F5F4F4
 }

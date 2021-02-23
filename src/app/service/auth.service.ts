@@ -15,7 +15,7 @@ export class AuthService {
 
   entrar(userLogin: UserLogin): Observable<UserLogin> {
     return this.http.post<UserLogin>
-    ('http://localhost:8080/usuarios/logar',UserLogin)
+    ('http://localhost:8080/usuarios/logar',userLogin)
   }
 
   cadastrar(user: User): Observable<User>{

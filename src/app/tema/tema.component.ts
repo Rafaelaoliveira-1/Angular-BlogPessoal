@@ -28,16 +28,13 @@ export class TemaComponent implements OnInit {
      }
 
      this.findAllTemas()
-
   }
-
 
   findAllTemas(){
     this.temaService.getAllTema().subscribe((resp: Tema[])=> {
       this.listaTemas = resp
     })
   }
-
 
   cadastrar(){
     this.temaService.postTema(this.tema).subscribe((resp: Tema)=>{

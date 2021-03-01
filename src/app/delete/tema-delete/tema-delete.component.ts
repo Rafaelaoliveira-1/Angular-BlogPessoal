@@ -39,7 +39,7 @@ export class TemaDeleteComponent implements OnInit {
   }
 
   apagar(){
-    this.temaService.deleteTema(this.idTema).subscribe(()=>{
+    this.temaService.deleteTema(this.idTema).subscribe(()=>{ // ERRO NÃO PEGA O ID TEMA e No vídeo era getByIdTema no TEMA-EDIT
       alert('Tema apagado com sucesso')
       this.router.navigate(['/tema'])
     })

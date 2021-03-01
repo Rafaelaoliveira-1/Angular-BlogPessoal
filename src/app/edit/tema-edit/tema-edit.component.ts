@@ -31,8 +31,8 @@ export class TemaEditComponent implements OnInit {
   }
 
   findIdTema(id: number){
-    this.temaService.getById(id).subscribe((resp: Tema)=>{
-      this.tema = resp //No vídeo era getByIdTema
+    this.temaService.getById(id).subscribe((resp: Tema) =>{ //formato JSON
+      this.tema = resp //No vídeo era getByIdTema - ESTA CORRETO RAFA
     })
   }
 
